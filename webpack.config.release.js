@@ -1,12 +1,12 @@
-var path = require("path");
+var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
     devtool: 'cheap-module-source-map',
-    entry: './js/functional.js',
+    entry: './src/functional.js',
     output: {
-        path: path.resolve(__dirname, "build"),
-        filename: "bundle.js"
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js'
     },
     eslint: {
         configFile: '.eslintrc'

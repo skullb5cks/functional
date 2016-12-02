@@ -12,6 +12,7 @@ var compiler = webpack(webpackConfig);
 // app.use(express.static(path.join(__dirname, '../')));
 // app.use(proxy(['/api/**'], { target: 'http://localhost:8088' }));
 app.use(webpackDevMiddleware(compiler, {
+    index: 'index.html',
     noInfo: true,
     hot: true,
     publicPath: webpackConfig.output.publicPath,

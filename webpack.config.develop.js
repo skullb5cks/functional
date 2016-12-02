@@ -13,21 +13,21 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/assets/'
     },
-    eslint: {
-        configFile: '.eslintrc'
-    },
+    // eslint: {
+    //     configFile: '.eslintrc'
+    // },
     module: {
         loaders: [
             {
-                test: /\.jsx?$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
                 loaders: ['babel']
-            },
-            {
-                test: /.jsx?$/,
-                loader: 'eslint',
-                include: path.join(__dirname, 'src')
             }
+            // {
+            //     test: /\.js$/,
+            //     loader: 'eslint',
+            //     include: path.join(__dirname, 'src')
+            // }
         ]
     },
     plugins: [
